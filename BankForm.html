@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>
+         Welcome to Bank
+     </title>
+     <style> 
+     body{
+         background-color: lightgrey;
+     }
+     .center{
+         text-align: center;
+         text-decoration-line: underline;
+         background-color: rgb(97, 97, 175);
+         padding: 20px;
+         margin: 10px;      
+     }
+
+     p{
+         text-align: center;     
+     }
+      
+    .y{
+          margin-right: 10px;
+          text-align: right;
+      }
+      .Personal_Details{
+        margin-top:10px;
+        padding: 20px;   
+    }
+    
+
+    label{margin-top: 10px;
+    }
+
+    input{margin-top: 20px;
+    }
+    textarea{
+        margin-top: 20px;
+    }
+    .Loan_Details{
+        margin-top:10px;
+        padding: 20px;  
+    }
+    select{
+        margin-top: 20px;
+    }
+
+    h4{
+        text-align: right;
+        margin-right: 10px;
+    }
+    .Submit{
+        text-align: center;
+
+    }
+   
+    </style>
+    </head>
+    <body>
+       <h1 class="center">Welcome to Bharat Bank</h1> 
+       
+       <p>Personal Loan Application</p>
+       <p> Fields marked in  <span style="color:red">*</span> are mandatory</p>
+     
+    <p class="y">Assam, India</p>
+        
+        <hr>
+
+
+        <div class="Personal_Details">
+           <h3>Personal Details</h3>
+            <form>
+                <label>  First Name<span style="color:red">*</span> :</label>
+                <input type="text" required/>
+                <br>
+                <label>Last Name <span style="color:red">*</span>:</label>
+                <input type="text" required/>
+                 <br>
+                <label>Gender<span style="color:red">*</span> :</label>
+                <input type="radio" name="gender" required>Male
+                <input type="radio" name="gender" required>Female
+                <br>
+                <label>Date of Birth :</label>
+                <input type="date" />
+                 <br>
+                 <label>Email :</label>
+                <input type="email"/>
+                 <br>
+                 <label for="Address" >Address <span style="color:red">*</span> : </label>
+                <textarea id="Address" name="Address" rows="5" cols="100" required> </textarea>
+                 <br>
+                 <label>UID Number<span style="color:red">*</span> :</label>
+                <input type="text" required/>
+            </form>
+        </div>
+
+        <hr>
+       
+        <div class="Loan_Details">
+            <h3> Loan Details</h3>
+            <form>
+                <label>  Loan Amount<span style="color:red">*</span> :</label>
+                <input type="number" required/>
+                <br>
+
+                <label>  Account Number<span style="color:red">*</span> :</label>
+                <input type="number" required/>
+                <br>
+                
+                <label>  IFSC Code<span style="color:red">*</span> :</label>
+                <input type="number" required/>
+                <br>
+                <label> Type of Account<span style="color:red">*</span> :</label>
+                <input type="radio" name="TypeOfAcc" required/>Savings
+                <input type="radio"  name="TypeOfAcc" required/>Current
+                 <br>
+                
+                 
+                 <label> Credit Type (If Sanctioned) :</label>
+                 <input type="checkbox"/>Cash
+                 <input type="checkbox"/>Cheque
+                 <br>
+                 <label> Tenure <span style="color:red">*</span></label>
+                 <select>
+                    <option> None</option>
+                     <option> 3 Months</option>
+                     <option> 6 Months</option>
+                     <option> 12 Months</option>
+                     <option> 24 Months</option>
+                 </select>
+                 <br>    
+            </form>
+        </div>
+        <div class="Submit">
+            <label> Signature  <span style="color:red">*</span></label>
+            <input type="text"/>
+            <br>
+            <label></label>
+            <input type="submit"/>
+        </div>
+        
+        
+
+    </body>
+</html>
